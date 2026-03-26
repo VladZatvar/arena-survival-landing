@@ -104,3 +104,30 @@ body {
         font-size: 16px;
     }
 }
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background: #ffffff;
+    color: #111827;
+    padding: 10px 16px;
+    border-radius: 6px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+.section ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.section li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

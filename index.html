@@ -7,29 +7,52 @@
     <meta name="description" content="Лендінг бакалаврської роботи на тему ігрового застосунку жанру виживання на арені з процедурною зміною ігрових подій.">
     <meta name="keywords" content="survival arena, game application, procedural events, Java game, бакалаврська робота, ігровий застосунок">
     <meta name="author" content="Vlad Zatvar">
+    <meta name="robots" content="index, follow">
 
     <meta property="og:title" content="Ігровий застосунок жанру виживання на арені">
     <meta property="og:description" content="Презентація теми бакалаврської роботи про survival arena гру з процедурною зміною подій.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vladzatvar.github.io/arena-survival-landing/">
+    <meta property="og:locale" content="uk_UA">
 
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": "Ігровий застосунок жанру виживання на арені з процедурною зміною ігрових подій",
+            "alternateName": "Game Application in the Arena Survival Genre with Procedurally Changing Game Events",
+            "author": {
+                "@type": "Person",
+                "name": "Vlad Zatvar"
+            },
+            "inLanguage": "uk",
+            "genre": "Bachelor Thesis",
+            "description": "Концепція бакалаврської роботи, присвяченої розробці ігрового застосунку жанру виживання на арені з процедурною зміною ігрових подій."
+        }
+    </script>
 </head>
 <body>
-<header class="hero">
+<a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
+
+<header class="hero" role="banner">
     <div class="container">
         <p class="label">Бакалаврська робота</p>
         <h1>Ігровий застосунок жанру виживання на арені з процедурною зміною ігрових подій</h1>
         <p class="subtitle">
             Game Application in the Arena Survival Genre with Procedurally Changing Game Events
         </p>
-        <a href="#about" class="button">Дізнатися більше</a>
+        <nav aria-label="Основна навігація">
+            <a href="#about" class="button">Короткий опис</a>
+        </nav>
     </div>
 </header>
 
-<main>
-    <section id="about" class="section">
+<main id="main-content">
+    <section id="about" class="section" aria-labelledby="about-title">
         <div class="container">
-            <h2>Короткий опис</h2>
+            <h2 id="about-title">Короткий опис</h2>
             <p>
                 Бакалаврська робота присвячена розробці ігрового застосунку жанру виживання на арені,
                 у якому ігрові події змінюються процедурно. Такий підхід забезпечує варіативність
@@ -38,18 +61,31 @@
         </div>
     </section>
 
-    <section class="section alt">
+    <section class="section alt" aria-labelledby="status-title">
         <div class="container">
-            <h2>Стан проєкту</h2>
+            <h2 id="status-title">Стан проєкту</h2>
             <p>
                 Наразі представлено концепцію та базову структуру лендінгу. Повний текст бакалаврської
                 роботи перебуває на етапі підготовки.
             </p>
         </div>
     </section>
+
+    <section class="section" aria-labelledby="seo-title">
+        <div class="container">
+            <h2 id="seo-title">SEO та доступність</h2>
+            <ul>
+                <li>Семантична HTML-структура сторінки</li>
+                <li>Коректна ієрархія заголовків</li>
+                <li>Open Graph метатеги</li>
+                <li>Schema.org розмітка</li>
+                <li>Можливість переходу до основного вмісту</li>
+            </ul>
+        </div>
+    </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <div class="container">
         <p>© 2026 Vlad Zatvar. Навчальний проєкт.</p>
     </div>
