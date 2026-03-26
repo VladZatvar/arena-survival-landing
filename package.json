@@ -4,12 +4,14 @@
   "description": "Односторінковий лендінг для презентації бакалаврської роботи на тему:",
   "main": "index.js",
   "scripts": {
-    "lint:html": "htmlhint \"**/*.html\"",
-    "lint:css": "stylelint \"**/*.css\"",
-    "format:check": "prettier --check \"**/*.{html,css,md}\"",
-    "format": "prettier --write \"**/*.{html,css,md}\"",
+    "lint:html": "htmlhint \"index.html\"",
+    "lint:css": "stylelint \"style.css\"",
+    "format:check": "prettier --check \"index.html\" \"style.css\" \"script.js\" \"README.md\" \"docs/*.md\"",
+    "format": "prettier --write \"index.html\" \"style.css\" \"script.js\" \"README.md\" \"docs/*.md\"",
     "check": "npm run lint:html && npm run lint:css && npm run format:check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs": "jsdoc script.js -d docs/api",
+    "docs:clean": "if exist docs\\api rmdir /s /q docs\\api"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "htmlhint": "^1.9.2",
     "husky": "^9.1.7",
+    "jsdoc": "^4.0.5",
     "prettier": "^3.8.1",
     "stylelint": "^17.5.0",
     "stylelint-config-standard": "^40.0.0"
