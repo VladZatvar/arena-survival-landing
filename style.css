@@ -131,3 +131,15 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+a {
+    color: #1d4ed8;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+strong {
+    color: #111827;
+}
