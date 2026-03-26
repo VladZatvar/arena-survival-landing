@@ -200,3 +200,13 @@ strong {
 .back-to-top.visible {
   display: block;
 }
+
+.user-error-message {
+  margin: 0;
+  padding: 12px 16px;
+  background-color: #ffe0e0;
+  color: #8b0000;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid #cc0000;
+}
